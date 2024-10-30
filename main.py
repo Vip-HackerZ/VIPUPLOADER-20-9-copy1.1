@@ -50,7 +50,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝗢𝗺𝗞𝗮𝗥</pre> \n\n<pre>💌 ᴅᴍ ☛@FNC_OmKaR ᴛᴏ ᴜꜱᴇ ᴍᴇ😉!<pre>\n\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝗢𝗺𝗞𝗮𝗥</pre> \n<pre>**💌 ᴅᴍ ☛@FNC_OmKaR ᴛᴏ ᴜꜱᴇ ᴍᴇ😉!**<pre>\n\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
 @bot.on_message(filters.command("Stop"))    
 async def restart_handler(_, m):    
