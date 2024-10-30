@@ -43,14 +43,14 @@ except ValueError:
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7453205223:AAFp3qt2VWoTjGBLomoijSIszaKoHAIPakc",    
+   bot_token="7514558685:AAFSAm0JYFc0mxhKGdTKjEu4HfJGTJuFpE8",    
    api_id= 21179966,    
    api_hash= "d97919fb0a3c725e8bb2a25bbb37d57c"
 )
 
 @bot.on_message(filters.command(["start"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝗢𝗺𝗞𝗮𝗥</pre>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n<pre>💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝗢𝗺𝗞𝗮𝗥</pre> \n\n<pre>💌 ᴅᴍ ☛@FNC_OmKaR ᴛᴏ ᴜꜱᴇ ᴍᴇ😉!<pre>\n\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
 @bot.on_message(filters.command("Stop"))    
 async def restart_handler(_, m):    
@@ -80,7 +80,7 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["scammer"]))    
+@bot.on_message(filters.command(["kalki"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
@@ -283,7 +283,7 @@ async def account_login(bot: Client, m: Message):
                         continue
                      
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [𝗢𝗺𝗞𝗮𝗥™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [𝗢𝗺𝗞𝗮𝗥™]**\n\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
                     prog = await m.reply_text(Show)    
                     res_file = await helper.download_video(url, cmd, name)    
                     filename = res_file    
