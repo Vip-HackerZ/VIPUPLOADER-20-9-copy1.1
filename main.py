@@ -44,8 +44,8 @@ ADMINS.append(OWNER)
 
 bot = Client("bot",    
    bot_token="7514558685:AAFSAm0JYFc0mxhKGdTKjEu4HfJGTJuFpE8",    
-   api_id= 21179966,    
-   api_hash= "d97919fb0a3c725e8bb2a25bbb37d57c"
+   api_id= 18156248,    
+   api_hash= "db946fb6805b1a698c679626b617e77a"
 )
 
 @bot.on_message(filters.command(["start"]))    
